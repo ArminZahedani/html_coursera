@@ -1,0 +1,84 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+p, .top {
+    font-family: fantasy;
+    padding: 0px 10px;
+}
+  
+
+.top {
+    text-align: center;
+    position: relative;
+    float: right;
+    top: 0px;
+    border-width: 1em;
+    border: 1px solid black;
+    width: 30%;
+    right: 0px;
+}
+.line {
+    height: 30px;
+}
+.sushi {
+    background-color: blanchedalmond;
+}
+.beef {
+    background-color: red;
+    color: white;
+}
+.chicken {
+    background-color: orange;
+}
+
+
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+    .col-lg-3 {
+      float: left;
+      border: 1px solid black;
+      position: relative;
+      margin-left: 20px;
+      width: calc(33% - 20px);
+      background-color: grey;
+      
+    }
+  }
+  /********** Medium devices only **********/
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+        border: 1px solid black;
+        position: relative;
+        background-color: grey;
+    }
+    .col-md-6 {
+        margin-left: 20px;
+        width: calc(50% - 20px);
+    }
+    .col-md-12 {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: calc(100% - 20px);
+      }
+  }
+    /********** Small devices only **********/
+    @media(max-width: 767px) {
+        .col-sm-12 {
+            float: left;
+            border: 1px solid black;
+            position: relative;
+            margin-left: 20px;
+            margin-top: 20px;
+            width: calc(100% - 20px);
+            background-color: grey;
+        }
+      }
